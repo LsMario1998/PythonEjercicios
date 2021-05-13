@@ -10,19 +10,17 @@ class Triangulo:
     def Imprimir(self):
         if self.a > self.b and self.a > self.c:
             print("{} es el lado con mayor tamaño".format(self.a))
+        elif self.b > self.c:
+            print("{} es el lado con mayor tamaño".format(self.b))
         else:
-            if self.b > self.a and self.b > self.c:
-                print("{} es el lado con mayor tamaño".format(self.b))
-            else:
-                print("{} es el lado con mayor tamaño".format(self.c))
+            print("{} es el lado con mayor tamaño".format(self.c))
     def tipo(self):    
         if self.a == self.b == self.c:
                 print("Es un triangulo equilatero")
-        else: 
-            if self.a == self.b and self.a != self.c or self.a == self.c and self.a != self.b:
-                print("Triangulo Isosceles")
-            else:
-                print("Escaleno")    
+        elif self.a != self.b and self.a != self.c:
+            print("Triangulo Escaleno")
+        else:
+            print("Triangulo Isosceles")    
 
 Tri1 = Triangulo()
 Tri1.inicializar(3,3,3)
