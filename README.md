@@ -1,2 +1,2 @@
 # PythonEjercicios
-Ejercicios practicos
+Ejercicios de Hackerrank, Sololearn, etc.
