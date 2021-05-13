@@ -1,10 +1,8 @@
 class Agenda:
-	# iniciamos nuestra clase
 	def __init__(self):
-		# crearemos una lista donde guardaremos los datos de nuestra agenda
 		self.contactos=[]
  
-	# menu del programa
+	
 	def menu(self):
 		print()
 		menu=[
@@ -32,11 +30,11 @@ class Agenda:
 			print("Saliendo de la agenda ...")
 			exit()
  
-		# volvemos a llamar al menú
+		
 		self.menu()
  
  
-	# función para añadir un contacto
+	
 	def anadir(self):
 		print("---------------------")
 		print("Añadir nuevo contacto")
@@ -47,9 +45,7 @@ class Agenda:
 		self.contactos.append({'nombre':nom,'telf':telf,'email':email})
 		
  
-	# función para imprimir la lista de contactos
-	# En este caso imprimiremos solo los nombres de los contactos
-	# con ellos podremos buscar luego un contacto
+	
 	def lista(self):
 		print("------------------")
 		print("Lista de contactos")
@@ -61,7 +57,7 @@ class Agenda:
 				print(self.contactos[x]['nombre'])
 		
  
-	# función para buscar un contacto a través del nombre
+	
 	def buscar(self):
 		print("---------------------")
 		print("Buscador de contactos")
@@ -74,10 +70,7 @@ class Agenda:
 				print("Teléfono: ",self.contactos[x]['telf'])
 				print("E-mail: ",self.contactos[x]['email'])
 				return x
-		
- 
- 
-	# función para editar los datos de un contacto
+
 	def editar(self):
 		print("---------------")
 		print("Editar contacto")
@@ -105,6 +98,6 @@ class Agenda:
  
  
  
-# bloque principal
+
 agenda=Agenda()
 agenda.menu()
