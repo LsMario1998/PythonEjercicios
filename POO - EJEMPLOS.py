@@ -35,7 +35,7 @@ class Gato(Animal):
         print("AAAAA")
         
 class Perro(Animal):
-    tipo = 'perro'
+    tipo = 'perro' 
     def __init__(self, nombre, onomatopeya):
         super().__init__(nombre, onomatopeya)
         print("perrrroooooo")
